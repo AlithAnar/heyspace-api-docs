@@ -1,0 +1,15 @@
+openapi: 3.0.0
+info:
+  title: HeySpace
+  version: '1.0'
+  description: ''
+  contact:
+    email: g.pasieka@timecamp.com
+    name: Grzegorz Pasieka
+servers:
+  - url: 'https://app.hey.space/api'
+    description: HeySpace
+paths: {}
+components:
+  schemas: {}
+  securitySchemes: {}

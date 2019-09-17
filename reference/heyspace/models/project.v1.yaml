@@ -1,0 +1,38 @@
+title: Project
+type: object
+properties:
+  id:
+    type: string
+  name:
+    type: string
+  organizationId:
+    type: string
+  description:
+    type: string
+  status:
+    type: string
+    enum:
+      - exists
+      - deleted
+      - archived
+  projectType:
+    type: string
+    enum:
+      - project
+      - direct-chat
+      - group-chat
+  creatorId:
+    type: string
+  isArchived:
+    type: boolean
+  isPrivate:
+    type: boolean
+  color:
+    type: string
+  autoJoin:
+    type: boolean
+required:
+  - id
+  - name
+  - organizationId
+  - projectType

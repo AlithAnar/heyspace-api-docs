@@ -1,0 +1,19 @@
+title: Organization
+type: object
+x-examples: {}
+properties:
+  id:
+    type: string
+  name:
+    type: string
+  createdAt:
+    type: string
+    format: date-time
+  modifiedAt:
+    type: string
+    format: date-time
+  logo:
+    type: string
+required:
+  - id
+  - name
