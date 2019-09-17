@@ -19,7 +19,7 @@ paths:
         schema:
           type: string
     get:
-      summary: Your GET endpoint
+      summary: Get project data
       tags: []
       responses:
         '200':
@@ -30,6 +30,8 @@ paths:
               schema:
                 $ref: ./models/project.v1.yaml
               examples: {}
+        '404':
+          description: Not Found
       parameters: []
       requestBody: {}
       description: ''
