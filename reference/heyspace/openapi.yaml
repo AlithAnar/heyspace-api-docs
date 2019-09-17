@@ -19,22 +19,16 @@ paths:
         schema:
           type: string
     get:
-      summary: Get project data
-      tags: []
+      summary: ''
       responses:
         '200':
           description: OK
-          headers: {}
           content:
             application/json:
               schema:
                 $ref: ./models/project.v1.yaml
-              examples: {}
-        '404':
-          description: Not Found
-      parameters: []
-      requestBody: {}
-      description: ''
+      tags:
+        - Project
 components:
   schemas: {}
   securitySchemes: {}

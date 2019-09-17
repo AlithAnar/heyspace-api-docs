@@ -3,36 +3,38 @@ type: object
 properties:
   id:
     type: string
-  name:
+  autoJoin:
+    type: boolean
+  color:
     type: string
-  organizationId:
+  isPrivate:
+    type: boolean
+  isArchived:
+    type: boolean
+  creatorId:
     type: string
-  description:
-    type: string
-  status:
-    type: string
-    enum:
-      - exists
-      - deleted
-      - archived
   projectType:
     type: string
     enum:
       - project
       - direct-chat
       - group-chat
-  creatorId:
+  status:
     type: string
-  isArchived:
-    type: boolean
-  isPrivate:
-    type: boolean
-  color:
+    enum:
+      - exists
+      - deleted
+      - archived
+  description:
     type: string
-  autoJoin:
-    type: boolean
+  organizationId:
+    type: string
+  name:
+    type: string
 required:
   - id
   - name
   - organizationId
   - projectType
+x-tags:
+  - Project
