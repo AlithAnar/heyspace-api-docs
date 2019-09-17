@@ -9,7 +9,30 @@ info:
 servers:
   - url: 'https://app.hey.space/api'
     description: HeySpace
-paths: {}
+paths:
+  '/projects/{projectId}':
+    parameters:
+      - type: string
+        name: projectId
+        in: path
+        required: true
+        schema:
+          type: string
+    get:
+      summary: Your GET endpoint
+      tags: []
+      responses:
+        '200':
+          description: OK
+          headers: {}
+          content:
+            application/json:
+              schema:
+                $ref: ./models/project.v1.yaml
+              examples: {}
+      parameters: []
+      requestBody: {}
+      description: ''
 components:
   schemas: {}
   securitySchemes: {}
