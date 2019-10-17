@@ -17,3 +17,5 @@ required:
   - id
   - name
 x-examples: {}
+x-tags:
+  - Models

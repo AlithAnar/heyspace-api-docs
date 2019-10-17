@@ -6,3 +6,5 @@ properties:
   status:
     type: string
 description: Success response without result
+x-tags:
+  - Responses

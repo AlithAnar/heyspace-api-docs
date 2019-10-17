@@ -36,3 +36,5 @@ required:
   - name
   - organizationId
   - projectType
+x-tags:
+  - Models

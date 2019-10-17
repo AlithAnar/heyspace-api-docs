@@ -6,5 +6,7 @@ properties:
     type: string
   response:
     $ref: ./project.v1.yaml
-title: 'ProjectSuccessReponse'
-description: 'Project success response with result'
+title: ProjectSuccessReponse
+description: Project success response with result
+x-tags:
+  - Responses
