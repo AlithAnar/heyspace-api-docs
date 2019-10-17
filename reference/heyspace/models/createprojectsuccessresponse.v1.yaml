@@ -1,0 +1,10 @@
+type: object
+properties:
+  code:
+    type: number
+  status:
+    type: string
+  response:
+    $ref: ./project.v1.yaml
+title: 'ProjectSuccessReponse'
+description: 'Project success response with result'

@@ -17,5 +17,3 @@ required:
   - id
   - name
 x-examples: {}
-x-tags:
-  - Organization

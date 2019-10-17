@@ -18,18 +18,34 @@ paths:
         in: path
         required: true
     get:
-      summary: Get project data
+      summary: Get project
       responses:
         '200':
           description: OK
           content:
             application/json:
               schema:
-                $ref: ./models/project.v1.yaml
+                $ref: ./models/createprojectsuccessresponse.v1.yaml
       tags:
         - Project
       description: Get Project details
       operationId: get_project
+    patch:
+      summary: Update project
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: ./models/emptysuccessresponse.v1.yaml
+      description: ''
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: ./models/project.v1.yaml
+      operationId: update_project
 components:
   schemas: {}
   securitySchemes: {}

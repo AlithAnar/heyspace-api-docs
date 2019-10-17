@@ -1,0 +1,8 @@
+title: EmptySuccessResponse
+type: object
+properties:
+  code:
+    type: number
+  status:
+    type: string
+description: Success response without result
