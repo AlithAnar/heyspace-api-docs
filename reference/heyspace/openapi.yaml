@@ -46,6 +46,8 @@ paths:
             schema:
               $ref: ./models/project.v1.yaml
       operationId: update_project
+      tags:
+        - Project
 components:
   schemas: {}
   securitySchemes: {}
