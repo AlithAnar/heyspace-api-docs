@@ -26,6 +26,18 @@ paths:
             application/json:
               schema:
                 $ref: ./models/createprojectsuccessresponse.v1.yaml
+        '404':
+          description: Not Found
+          content:
+            application/json:
+              schema:
+                $ref: ./models/emptysuccessresponse.v1.yaml
+        '500':
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                $ref: ./models/emptysuccessresponse.v1.yaml
       tags:
         - Project
       description: Get Project details
@@ -35,6 +47,18 @@ paths:
       responses:
         '200':
           description: OK
+          content:
+            application/json:
+              schema:
+                $ref: ./models/emptysuccessresponse.v1.yaml
+        '404':
+          description: Not Found
+          content:
+            application/json:
+              schema:
+                $ref: ./models/emptysuccessresponse.v1.yaml
+        '500':
+          description: Internal Server Error
           content:
             application/json:
               schema:
